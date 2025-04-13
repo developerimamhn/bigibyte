@@ -113,7 +113,7 @@ const Footer = () => {
                     </div>
                         <div className='flex items-start justify-start gap-[36px] sm:gap-[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[96px] 2xl:gap-[130px]'>
                         <div className='flex items-start flex-col gap-[13px] sm:gap-[14px] md:gap-[15px] lg:gap-[16px] xl:gap-[20px] 2xl:gap-[24px] justify-start'>
-                          <a className='fotoerheadesecton text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] figtree'>DigiByte links.</a>
+                          <a className='fotoerheadesecton text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] figtree'>DigiByte links. .2</a>
                             <ul className='flex justify-start flex-col gap-[6] lg:gap-[8px] footeritesm figtree text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>
                               <a className='figtree'>DigiByte Wiki</a>
                               <a className='figtree'>DigiExplorer</a>
@@ -124,10 +124,10 @@ const Footer = () => {
                         <div className='flex items-start flex-col gap-[13px] sm:gap-[14px] md:gap-[15px] lg:gap-[16px] xl:gap-[20px] 2xl:gap-[24px] justify-start'>
                           <a className='fotoerheadesecton text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] figtree'>DigiByte links.</a>
                             <ul className='flex justify-start flex-col gap-[6] lg:gap-[8px] footeritesm figtree text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>
-                              <a className='figtree'>DigiByte Wiki</a>
-                              <a className='figtree'>DigiExplorer</a>
-                              <a className='figtree'>DigiStats </a>
-                              <a className='figtree'>DigiByte Mining</a>
+                              <a className='figtree'>DigiByte Wikis</a>
+                              <a className='figtree'>DigiExplorer2</a>
+                              <a className='figtree'>DigiStats 3</a>
+                              <a className='figtree'>DigiByte Mining5</a>
                             </ul>
                         </div>
                         </div>

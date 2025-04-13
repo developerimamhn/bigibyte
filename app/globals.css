@@ -154,10 +154,12 @@ body {
   .lineronezse{
     background-color: #522FC780;
   }
-  .linerone{
-    background: linear-gradient(270deg, #07090E 51.15%, rgba(7, 9, 14, 0.00) 100%);
-    width: 487px;
-    height: 73px;
+  .lineronesssss{
+    background: linear-gradient(90deg, #070312 42.15%, #07031200 100%);
+    flex-shrink: 0;
+  }
+  .lineronesssss22{
+    background: linear-gradient(270deg, #070312 42.15%, #07031200 100%);
     flex-shrink: 0;
   }
   .trustedinses{

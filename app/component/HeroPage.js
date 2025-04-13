@@ -241,9 +241,10 @@ const HeroPage = () => {
           </div>
           <div className='pb-[20px] sm:pb-[24px] md:pb-[32px] lg:pb-[36px] xl:pb-[40px] 2xl:pb-[44px]'>
               <h2 className='figtree trustedinses text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] py-[14px] sm:py-[15px] md:py-[16px] lg:py-[20px] xl:py-[24px] 2xl:py-[31px]'>Trusted by Industry Leaders</h2>
-              <div className='flex items-center'>
-                <div className='linerone'></div>
-                <div className="w-full overflow-hidden">
+              <div className='flex items-center '>
+                
+                <div className="w-full overflow-hidden relative"><div className='lineronesssss h-full absolute left-0 top-0 w-[70px] sm:w-[150px] md:w-[350px] 2xl:w-[487px] z-[50]'></div>
+                <div className='lineronesssss22 h-full absolute right-0 top-0 w-[70px] sm:w-[150px] md:w-[350px] 2xl:w-[487px] z-[50]'></div>
               <Slider {...sliderSettings}>
                 {logos.map((logo, index) => (
                   <div
