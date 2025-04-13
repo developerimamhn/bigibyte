@@ -1,7 +1,7 @@
 "use client";
 
 
-import React,{useEffect,useState} from 'react';
+import React,{useEffect,useState,useRef} from 'react';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -68,6 +68,41 @@ const Pagefive = () => {
         ScrollTrigger.refresh();
         return () => ctx.revert();
       }, []);
+
+
+
+
+      // hhsvs
+
+
+
+      const itemRefs = useRef([]);
+      
+        useEffect(() => {
+          itemRefs.current.forEach((el, index) => {
+            if (!el) return;
+      
+            gsap.fromTo(
+              el,
+              {
+                autoAlpha: 0,
+                y: 50,
+              },
+              {
+                autoAlpha: 1,
+                y: 0,
+                duration: 0.6,
+                ease: 'power2.out',
+                scrollTrigger: {
+                  trigger: el,
+                  start: 'top 100%',
+                  toggleActions: 'play none none none',
+                },
+                delay: index * 0.2, // Delay between each item
+              }
+            );
+          });
+        }, []);
     return (
         <div id='Community' className='section7 relative -mt-[1]'>
           <div className='voerflow w-full h-full absolute top-0 left-0 z-[-2]' ></div>
@@ -80,13 +115,13 @@ const Pagefive = () => {
                     <div className='flex flex-col justify-center items-center '>
                     <div className="w-full flex flex-col gap-[20px] sm:gap-[24px] md:gap-[28px] lg:gap-[32px] xl:gap-[36px] 2xl:gap-[40px]">
 
-                    {faqs.map((faq) => (
-                        <div key={faq.id} className="benifitsepepe pb-[13px] sm:pb-[14px] md:pb-[15px] lg:pb-[16px] xl:pb-[20px] 2xl:pb-[24px] w-full border-b-[1px] border-[#1F1C29]">
-                        <div className="flex items-center justify-between w-full">
+                    {faqs.map((faq, index) => (
+                        <div key={faq.id} ref={(el) => (itemRefs.current[index] = el)}  className="benifitsepepe pb-[13px] sm:pb-[14px] md:pb-[15px] lg:pb-[16px] xl:pb-[20px] 2xl:pb-[24px] w-full border-b-[1px] border-[#1F1C29]">
+                        <div onClick={() => toggleFaq(faq.id)} className="flex items-center justify-between w-full">
                             <div className="whatisextass text-[15px] sm:text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] figtree">
                             {faq.question}
                             </div>
-                            <div onClick={() => toggleFaq(faq.id)} className="group cursor-pointer">
+                            <div  className="group cursor-pointer">
                             <svg className={`w-[20px] sm:w-[24px] md:w-[32px] lg:w-[36px] xl:w-[40px] 2xl:w-[46px] cursor-pointer transition-transform duration-300 ${
                                 openFaq === faq.id ? "rotate-180" : "rotate-0"
                                 }`}  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

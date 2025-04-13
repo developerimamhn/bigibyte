@@ -223,6 +223,38 @@ const Pagetwo = () => {
   }, []);
 
 
+
+  // advds
+
+  const itemRefs = useRef([]);
+  
+    useEffect(() => {
+      itemRefs.current.forEach((el, index) => {
+        if (!el) return;
+  
+        gsap.fromTo(
+          el,
+          {
+            autoAlpha: 0,
+            y: 50,
+          },
+          {
+            autoAlpha: 1,
+            y: 0,
+            duration: 0.6,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: el,
+              start: 'top 100%',
+              toggleActions: 'play none none none',
+            },
+            delay: index * 0.2, // Delay between each item
+          }
+        );
+      });
+    }, []);
+
+
     
     return (
         <div id='Blockchain' ref={wrapperRef} className='relative overflow-hidden pb-[50px] sm:pb-[50px] md:pb-[60px] lg:pb-[90px] xl:pb-[110px] 2xl:pb-[141px] bg-[#100924]'>
@@ -235,7 +267,7 @@ const Pagetwo = () => {
                     {gridItems.map((item, index) => (
                         <div
                         key={index}
-                        // ref={gridItemRefs.current[index]}
+                        ref={(el) => (itemRefs.current[index] = el)}
                         className="foxbackgron figtree flex flex-col items-start justify-start p-[14px] sm:p-[15px] md:p-[16px] lg:p-[20px] xl:p-[24px] 2xl:p-[32px] gap-[16px] sm:gap-[20px] md:gap-[24px] lg:gap-[28px] xl:gap-[36px] 2xl:gap-[40px] relative"
                         >
                         {item.svg}

@@ -29,6 +29,10 @@ const Pageeight = () => {
       }
     );
   }, []);
+
+
+
+  
     return (
         <div className='relative overflow-hidden px-[24px] sm:px-0' id='Downloads'>
             <Image ref={svgRef} className="absolute left-1/2 -translate-x-1/2  -z-[0] w-full sm:block hidden" src={linetwo} alt=""/>
@@ -54,9 +58,9 @@ const Pageeight = () => {
 
               <h2 className='howtobue figtree text-[28px] sm:text-[32px] md:text-[38px] lg:text-[42px] xl:text-[50px] 2xl:text-[60px]'>Secure Fast Decentralized</h2>
               <p className='colscatavazsd text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] pt-[13px] sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[24px] figtree'>Secure. Fast. Decentralized. DigiByte powers reliable, real-world blockchain solutions.</p>
-                <div onClick={() => document.getElementById('email-input')?.focus()} id="email-form" className='roundclidenbttn flex items-center pl-[12px] sm:pl-[13px] md:pl-[14px] lg:pl-[15px] xl:pl-[16px] 2xl:pl-[20px] justify-between pr-[6px] lg:pr-[8px] py-[2px] lg:py-[8px] sm:gap-[100px] md:gap-[150px] lg:gap-[200px] xl:gap-[250px] 2xl:gap-[300px] mt-[16px] sm:mt-[20px] md:mt-[24px] lg:mt-[32px] xl:mt-[36px] 2xl:mt-[40px]'>
-                      <input id="email-input"  className='outline-none inpoutstys' type='gmail' pleacholder='Enter your email address '/>
-                      <button id="get-started-button" className='stateimageds text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] px-[14px] sm:px-[15px] md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[30px] py-[2px] md:py-[8px] xl:py-[10px] cursor-pointer figtree'>Get started</button>
+                <div onClick={() => document.getElementById('email-input')?.focus()} id="email-form" className='roundclidenbttn flex items-center pl-[12px] sm:pl-[13px] md:pl-[14px] lg:pl-[15px] xl:pl-[16px] 2xl:pl-[20px] justify-between pr-[6px] lg:pr-[8px] py-[2px] lg:py-[8px] mt-[16px] sm:mt-[20px] md:mt-[24px] lg:mt-[32px] xl:mt-[36px] 2xl:mt-[40px]'>
+                      <input id="email-input"  className="w-full sm:w-[300px] md:w-[400px] xl:w-[500px] 2xl:w-[500px] outline-none inpoutstys placeholder:text-[#fff]" type='email' placeholder="Enter your email address"/>
+                      <button id="get-started-button" className='stateimageds text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] px-[14px] sm:px-[15px] md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[30px] py-[2px] md:py-[8px] xl:py-[10px] cursor-pointer figtree w-fit'>Get started</button>
                 </div>
             </div>
         </div>

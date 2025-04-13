@@ -353,39 +353,7 @@ const gridItems = [
 
 
 const Pageone = () => {
-    // const gridItemRefs = useRef(gridItems.map(() => useRef(null)));
-    const [activeLink, setActiveLink] = useState('/buy'); 
-    const [isOpen, setIsOpen] = useState(false);
-    const [selectedCrypto, setSelectedCrypto] = useState({
-        image: numbeingss,
-        name: 'BNB',
-    });
-
-    const options = [
-        { image: numbeingss, name: 'BNB' },
-        { image: numbeingss, name: 'BMB' },
-        { image: numbeingss, name: 'BAB' },
-        { image: numbeingss, name: 'BCB' },
-    ];
-
-    const toggleDropdown = () => {
-        setIsOpen((prev) => !prev);
-    };
-
-    const handleSelect = (crypto) => {
-        setSelectedCrypto(crypto);
-        setIsOpen(false);
-    };
-    
-    
-    // Default to "/buy"
-
-    const handleLinkClick = (href) => {
-        setActiveLink(href); 
-    };
-
-
-    const wrapperRef = useRef(null);
+  const wrapperRef = useRef(null);
   const gridItem1Ref = useRef(null);
   const gridItem2Ref = useRef(null);
   const gridItem3Ref = useRef(null);
@@ -487,6 +455,38 @@ const Pageone = () => {
   }, []);
 
 
+  // itesms
+
+  const itemRefs = useRef([]);
+
+  useEffect(() => {
+    itemRefs.current.forEach((el, index) => {
+      if (!el) return;
+
+      gsap.fromTo(
+        el,
+        {
+          autoAlpha: 0,
+          y: 50,
+        },
+        {
+          autoAlpha: 1,
+          y: 0,
+          duration: 0.6,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 100%',
+            toggleActions: 'play none none none',
+          },
+          delay: index * 0.2, // Delay between each item
+        }
+      );
+    });
+  }, []);
+
+
+
     
     return (
         <div id='DigiAssets' ref={wrapperRef} className='relative '>
@@ -501,7 +501,7 @@ const Pageone = () => {
                     {gridItems.map((item, index) => (
                         <div
                         key={index}
-                        // ref={gridItemRefs.current[index]}
+                        ref={(el) => (itemRefs.current[index] = el)}
                         className="foxbackgron figtree flex flex-col items-start justify-start p-[14px] sm:p-[15px] md:p-[16px] lg:p-[20px] xl:p-[24px] 2xl:p-[32px] gap-[16px] sm:gap-[20px] md:gap-[24px] lg:gap-[28px] xl:gap-[36px] 2xl:gap-[40px] relative"
                         >
                         {item.svg}
