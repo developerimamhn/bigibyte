@@ -240,7 +240,7 @@ const Pagethree = () => {
             {
               autoAlpha: 1,
               y: 0,
-              duration: 0.6,
+              duration: 0.3,
               ease: 'power2.out',
               scrollTrigger: {
                 trigger: el,

@@ -91,7 +91,7 @@ const Pagefive = () => {
               {
                 autoAlpha: 1,
                 y: 0,
-                duration: 0.6,
+                duration: 0.3,
                 ease: 'power2.out',
                 scrollTrigger: {
                   trigger: el,
@@ -107,7 +107,7 @@ const Pagefive = () => {
         <div id='Community' className='section7 relative -mt-[1]'>
           <div className='voerflow w-full h-full absolute top-0 left-0 z-[-2]' ></div>
           
-            <div className='px-[24px] sm:px-0 container mx-auto py-[32px] sm:py-[36px] md:py-[40px] lg:py-[48px] xl:py-[64px] 2xl:py-[80px]'>
+            <div className='px-[24px] sm:px-0 container mx-auto pb-[32px] sm:pb-[36px] md:pb-[40px] lg:pb-[48px] xl:pb-[64px] 2xl:pb-[80px]'>
                 <div className='relative mt-[40px] sm:mt-[40px] md:mt-[50px] lg:mt-[66px] xl:mt-[80px] 2xl:mt-[100px] pb-[32px] sm:pb-[36px] md:pb-[40px] lg:pb-[48px] xl:pb-[64px] 2xl:pb-[73px]'>
                     <h2 className='howtobue text-[28px] sm:text-[32px] md:text-[38px] lg:text-[42px] xl:text-[50px] 2xl:text-[60px] figtree'>Frequently Asked Questions</h2>
                 </div>
@@ -117,7 +117,7 @@ const Pagefive = () => {
 
                     {faqs.map((faq, index) => (
                         <div key={faq.id} ref={(el) => (itemRefs.current[index] = el)}  className="benifitsepepe pb-[13px] sm:pb-[14px] md:pb-[15px] lg:pb-[16px] xl:pb-[20px] 2xl:pb-[24px] w-full border-b-[1px] border-[#1F1C29]">
-                        <div onClick={() => toggleFaq(faq.id)} className="flex items-center justify-between w-full">
+                        <div onClick={() => toggleFaq(faq.id)} className="flex items-center justify-between w-full cursor-pointer">
                             <div className="whatisextass text-[15px] sm:text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] figtree">
                             {faq.question}
                             </div>
