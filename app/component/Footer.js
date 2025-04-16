@@ -109,25 +109,25 @@ const Footer = () => {
                 <div className='flex items-center sm:items-start justify-between sm:flex-row flex-col gap-[40px] pb-[20px] sm:pb-[24px] md:pb-[28px] lg:pb-[32px] xl:pb-[36px] 2xl:pb-[40px] container mx-auto'>
                     <div className='flex flex-col gap-[13px] sm:gap-[14px] md:gap-[15px] lg:gap-[16px] xl:gap-[20px] 2xl:gap-[24px]'>
                         <Image className='w-[40px] sm:w-[50px] md:w-[60px] lg:w-[90px] xl:w-[120px] 2xl:w-[153px] ' src={logo} alt="loading..."/>
-                        <p className='privacypolicy text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] w-fit lg:w-[400px] figtree'>DigiByte is a fast-growing open-source blockchain launched in 2014. With 11 years of innovation, it&apos;s now one of the most secure, speedy, and decentralized UTXO blockchains. Trusted in over 100 countries worldwide.</p>
+                        <p className='privacypolicy text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] w-fit sm:w-[400px] figtree'>DigiByte is a fast-growing open-source blockchain launched in 2014. With 11 years of innovation, it&apos;s now one of the most secure, speedy, and decentralized UTXO blockchains. Trusted in over 100 countries worldwide.</p>
                     </div>
                         <div className='flex items-start justify-start gap-[36px] sm:gap-[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[96px] 2xl:gap-[130px]'>
                         <div className='flex items-start flex-col gap-[13px] sm:gap-[14px] md:gap-[15px] lg:gap-[16px] xl:gap-[20px] 2xl:gap-[24px] justify-start'>
-                          <a className='fotoerheadesecton text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] figtree'>DigiByte links. .2</a>
+                          <a className='fotoerheadesecton text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px] figtree'>DigiByte links.</a>
                             <ul className='flex justify-start flex-col gap-[6] lg:gap-[8px] footeritesm figtree text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>
                               <a className='figtree'>DigiByte Wiki</a>
                               <a className='figtree'>DigiExplorer</a>
-                              <a className='figtree'>DigiStats </a>
+                              <a className='figtree'>DigiStats</a>
                               <a className='figtree'>DigiByte Mining</a>
                             </ul>
                         </div>
                         <div className='flex items-start flex-col gap-[13px] sm:gap-[14px] md:gap-[15px] lg:gap-[16px] xl:gap-[20px] 2xl:gap-[24px] justify-start'>
-                          <a className='fotoerheadesecton text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] figtree'>DigiByte links.</a>
+                          <a className='fotoerheadesecton text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px] figtree'>Resources</a>
                             <ul className='flex justify-start flex-col gap-[6] lg:gap-[8px] footeritesm figtree text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>
-                              <a className='figtree'>DigiByte Wikis</a>
-                              <a className='figtree'>DigiExplorer2</a>
-                              <a className='figtree'>DigiStats 3</a>
-                              <a className='figtree'>DigiByte Mining5</a>
+                              <a className='figtree'>DGB Integration Guide</a>
+                              <a className='figtree'>DGB Media Sheet</a>
+                              <a className='figtree'>DGB Logos & Icons</a>
+                              <a className='figtree'>DGB Protocol GitHub</a>
                             </ul>
                         </div>
                         </div>
@@ -141,7 +141,7 @@ const Footer = () => {
                     </div>
                     <div className='flex items-center gap-[11px] md:gap-[14px] xl:gap-[16px]'>
                         <p className=''>
-                        <svg xmlns="http://www.w3.org/2000/svg" className='w-[16px] sm:w-[20px] md:w-[24px] lg:w-[32px] xl:w-[36px] 2xl:w-[40px] ' viewBox="0 0 40 40" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" className='w-[14px] sm:w-[15px] md:w-[16px] lg:w-[20px] xl:w-[25px] 2xl:w-[28px]' viewBox="0 0 40 40" fill="none">
                         <g clip-path="url(#clip0_122_30587)">
                           <path d="M40 20C40 8.95434 31.0457 2.67029e-05 20 2.67029e-05C8.95431 2.67029e-05 0 8.95434 0 20C0 29.3796 6.45719 37.2498 15.1685 39.411V26.1117H11.0443V20H15.1685V17.3665C15.1685 10.5591 18.2491 7.40394 24.9323 7.40394C26.1993 7.40394 28.3857 7.65234 29.2801 7.90082V13.4411C28.808 13.3915 27.9881 13.3666 26.9695 13.3666C23.6901 13.3666 22.4229 14.6088 22.4229 17.8386V20H28.9557L27.8334 26.1117H22.4229V39.8535C32.3258 38.6574 40 30.2254 40 20Z" fill="#070312"/>
                           <path d="M27.8333 26.1117L28.9556 20H22.4229V17.8385C22.4229 14.6087 23.6899 13.3666 26.9694 13.3666C27.988 13.3666 28.8079 13.3914 29.2799 13.4411V7.90083C28.3855 7.65234 26.1992 7.40386 24.9322 7.40386C18.2491 7.40386 15.1683 10.5591 15.1683 17.3665V20H11.0442V26.1117H15.1683V39.411C16.7158 39.7949 18.3338 40 19.9999 40C20.8202 40 21.6285 39.9494 22.4229 39.8535V26.1117H27.8333Z" fill="white"/>

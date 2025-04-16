@@ -551,7 +551,7 @@ const HeroPage = () => {
     });
   }, []);
     return (
-        <div className='relative'>
+        <div ref={buttonRef} className='relative'>
           <div className='relative z-[2] overflow-hidden'>
             <div className='pt-[100px] sm:pt-[90px] md:pt-[100px] lg:pt-[120px] xl:pt-[150px] 2xl:pt-[175px] mx-auto sm:pb-0 pb-[50px] container px-[24px] sm:px-0 w-full'>
             <svg className='w-1/4 absolute right-0  ' viewBox="0 0 537 1073" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -568,9 +568,9 @@ const HeroPage = () => {
             </svg>
             
 
-                <div ref={buttonRef} className='grid grid-cols-1 sm:grid-cols-2 items-center'>
+                <div  className='grid grid-cols-1 sm:grid-cols-2 items-center'>
                   <div data-layer="Frame 14" className="Frame14 flex flex-col justify-start items-starts w-full">
-                    <div ref={textRef} className='innovationsater px-[12px] sm:px-[13px] md:px-[14px] lg:px-[15px] xl:px-[16px] 2xl:px-[20px] py-[6px] md:py-[7px] lg:py-[8px] xl:py-[9px] 2xl:py-[10px] w-fit'>Innovating Sater System Security</div>
+                    <div  className='innovationsater px-[12px] sm:px-[13px] md:px-[14px] lg:px-[15px] xl:px-[16px] 2xl:px-[20px] py-[6px] md:py-[7px] lg:py-[8px] xl:py-[9px] 2xl:py-[10px] w-fit'>Innovating Sater System Security</div>
                       <div  className='inline-flex flex-col w-full mt-[12px] sm:mt-[13px] md:mt-[14px] lg:mt-[15px] xl:mt-[16px] 2xl:mt-[20px]'>
                           <div data-layer="Frame 13" className="Frame13 self-stretch flex flex-col justify-start items-start gap-[14px]  sm:gap-[16px] xl:gap-[24px]">
                               <div className="TradeLikeAProWithXonicCapital text-start text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[78px] figtree">
@@ -578,7 +578,7 @@ const HeroPage = () => {
                               </div>
                               <div className="InvestTodayBuildASecuredTomorrow text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] figtree">DigiByte is a fast, secure, and innovative blockchain for digital assets, smart contracts, dApps, and authentication.</div>
                           </div>
-                          <div ref={buttonRef} data-layer="Frame 12" className="Frame12 flex items-center pt-[13px] sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[25px] gap-[15px] sm:gap-[16px] md:gap-[20px] lg:gap-[24px] xl:gap-[26px] 2xl:gap-[28px] figtree">
+                          <div  data-layer="Frame 12" className="Frame12 flex items-center pt-[13px] sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[25px] gap-[15px] sm:gap-[16px] md:gap-[20px] lg:gap-[24px] xl:gap-[26px] 2xl:gap-[28px] figtree">
                             <button className='buttonaudit-2 cursor-pointer text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-[14.1px] flex items-center h-[36px] md:h-[40px] lg:h-[44px] xl:h-[48px] 2xl:h-[50px] px-[14px] sm:px-[15px] md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[30px] gap-[7px] group figtree'>
                             Learn More
                             </button>
@@ -594,7 +594,7 @@ const HeroPage = () => {
                 </div>
             </div>
           </div>
-          <div ref={buttonRef} className='pb-[20px] sm:pb-[24px] md:pb-[32px] lg:pb-[36px] xl:pb-[40px] 2xl:pb-[44px]'>
+          <div  className='pb-[20px] sm:pb-[24px] md:pb-[32px] lg:pb-[36px] xl:pb-[40px] 2xl:pb-[44px]'>
               <h2 className='figtree trustedinses text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] py-[14px] sm:py-[15px] md:py-[16px] lg:py-[20px] xl:py-[24px] 2xl:py-[31px]'>Trusted by Industry Leaders</h2>
               <div className='flex items-center py-[13px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[23px]'>
                 

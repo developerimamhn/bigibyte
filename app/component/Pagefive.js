@@ -118,7 +118,7 @@ const Pagefive = () => {
                     {faqs.map((faq, index) => (
                         <div key={faq.id} ref={(el) => (itemRefs.current[index] = el)}  className="benifitsepepe pb-[13px] sm:pb-[14px] md:pb-[15px] lg:pb-[16px] xl:pb-[20px] 2xl:pb-[24px] w-full border-b-[1px] border-[#1F1C29]">
                         <div onClick={() => toggleFaq(faq.id)} className="flex items-center justify-between w-full cursor-pointer">
-                            <div className="whatisextass text-[15px] sm:text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] figtree">
+                            <div className="whatisextass text-[15px] sm:text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[30px] figtree">
                             {faq.question}
                             </div>
                             <div  className="group cursor-pointer">
