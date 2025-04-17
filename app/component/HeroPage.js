@@ -446,7 +446,7 @@ const logos = [
   </clipPath>
 </defs>
 </svg>`,
-`<svg xmlns="http://www.w3.org/2000/svg" width="118" height="30" viewBox="0 0 118 30" fill="none">
+`<svg xmlns="http://www.w3.org/2000/svg"  width="118" height="30" viewBox="0 0 118 30" fill="none">
 <g clip-path="url(#clip0_122_30365)">
   <path d="M8.36503 19.585C5.11903 19.585 0.0510254 20.051 0.0510254 15.37C0.0510254 12.99 1.78303 10.924 4.26603 10.924C12.365 10.924 18.926 17.486 18.926 25.585V25.651C18.9266 26.2046 18.8179 26.7529 18.6063 27.2644C18.3948 27.776 18.0844 28.2408 17.693 28.6323C17.3016 29.0238 16.8369 29.3343 16.3253 29.5459C15.8138 29.7576 15.2656 29.8664 14.712 29.866C10.102 29.866 10.497 24.951 10.497 21.734C10.497 20.544 9.53803 19.585 8.36503 19.585Z" fill="white"/>
   <path d="M19.786 8.16465C19.786 4.91865 20.252 -0.149351 15.571 -0.149351C15.168 -0.149351 11.125 -0.584351 11.125 4.06565C11.125 12.1646 17.687 18.7256 25.786 18.7256C28.11 18.7256 30.067 16.8626 30.067 14.5116C30.067 9.90165 25.152 10.2966 21.935 10.2966C21.6539 10.2978 21.3753 10.2436 21.1151 10.1371C20.855 10.0306 20.6184 9.87386 20.4188 9.67587C20.2192 9.47789 20.0606 9.24252 19.9521 8.98322C19.8435 8.72392 19.787 8.44576 19.786 8.16465Z" fill="white"/>
@@ -509,7 +509,7 @@ const sliderSettings = {
     {
       breakpoint: 480, // Small mobile phones
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
       },
     },
@@ -569,16 +569,16 @@ const HeroPage = () => {
             
 
                 <div  className='grid grid-cols-1 sm:grid-cols-2 items-center'>
-                  <div data-layer="Frame 14" className="Frame14 flex flex-col justify-start items-starts w-full">
-                    <div  className='innovationsater px-[12px] sm:px-[13px] md:px-[14px] lg:px-[15px] xl:px-[16px] 2xl:px-[20px] py-[6px] md:py-[7px] lg:py-[8px] xl:py-[9px] 2xl:py-[10px] w-fit'>Innovating Sater System Security</div>
+                  <div data-layer="Frame 14" className="Frame14 flex flex-col justify-center sm:justify-start items-center sm:items-starts w-full">
+                    <div  className='innovationsater flex items-center sm:items-start px-[12px] sm:px-[13px] md:px-[14px] lg:px-[15px] xl:px-[16px] 2xl:px-[20px] py-[6px] md:py-[7px] lg:py-[8px] xl:py-[9px] 2xl:py-[10px] w-fit sm:justify-start !justify-center'>Innovating Sater System Security</div>
                       <div  className='inline-flex flex-col w-full mt-[12px] sm:mt-[13px] md:mt-[14px] lg:mt-[15px] xl:mt-[16px] 2xl:mt-[20px]'>
-                          <div data-layer="Frame 13" className="Frame13 self-stretch flex flex-col justify-start items-start gap-[14px]  sm:gap-[16px] xl:gap-[24px]">
-                              <div className="TradeLikeAProWithXonicCapital text-start text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[78px] figtree">
+                          <div data-layer="Frame 13" className="Frame13 self-stretch flex flex-col justify-center sm:justify-start items-center sm:items-start gap-[14px]  sm:gap-[16px] xl:gap-[24px]">
+                              <div className="TradeLikeAProWithXonicCapital text-center sm:text-start text-[32px] sm:text-[36px] md:text-[40px] lg:text-[48px] xl:text-[64px] 2xl:text-[78px] figtree">
                               More secure, Faster,<br className='md:block hidden'/> Forward <span className='gradientuser'>thinking</span>
                               </div>
-                              <div className="InvestTodayBuildASecuredTomorrow text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] figtree">DigiByte is a fast, secure, and innovative blockchain for digital assets, smart contracts, dApps, and authentication.</div>
+                              <div className="InvestTodayBuildASecuredTomorrow text-center sm:text-start text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] figtree">DigiByte is a fast, secure, and innovative blockchain for digital assets, smart contracts, dApps, and authentication.</div>
                           </div>
-                          <div  data-layer="Frame 12" className="Frame12 flex items-center pt-[13px] sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[25px] gap-[15px] sm:gap-[16px] md:gap-[20px] lg:gap-[24px] xl:gap-[26px] 2xl:gap-[28px] figtree">
+                          <div  data-layer="Frame 12" className="Frame12 flex items-center pt-[13px] sm:pt-[14px] md:pt-[15px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[25px] gap-[15px] sm:justify-start justify-center sm:gap-[16px] md:gap-[20px] lg:gap-[24px] xl:gap-[26px] 2xl:gap-[28px] figtree">
                             <button className='buttonaudit-2 cursor-pointer text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-[14.1px] flex items-center h-[36px] md:h-[40px] lg:h-[44px] xl:h-[48px] 2xl:h-[50px] px-[14px] sm:px-[15px] md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[30px] gap-[7px] group figtree'>
                             Learn More
                             </button>
@@ -594,7 +594,7 @@ const HeroPage = () => {
                 </div>
             </div>
           </div>
-          <div  className='pb-[20px] sm:pb-[24px] md:pb-[32px] lg:pb-[36px] xl:pb-[40px] 2xl:pb-[44px]'>
+          <div  className='pb-[20px] sm:pb-[24px] md:pb-[32px] lg:pb-[36px] xl:pb-[40px] 2xl:pb-[44px] mt-[20px]'>
               <h2 className='figtree trustedinses text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] py-[14px] sm:py-[15px] md:py-[16px] lg:py-[20px] xl:py-[24px] 2xl:py-[31px]'>Trusted by Industry Leaders</h2>
               <div className='flex items-center py-[13px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[23px]'>
                 
@@ -604,10 +604,10 @@ const HeroPage = () => {
                 {logos.map((logo, index) => (
                   <div
                     key={index}
-                    className="flex justify-center items-center px-2"
+                    className="flex justify-center items-center px-2 sm:w-auto !w-[30px]"
                   >
                     <div
-                      className="animate-logoFadeIn cursor-pointer hover:scale-[1.05] duration-200"
+                      className="animate-logoFadeIn cursor-pointer hover:scale-[1.05] duration-200 sm:w-auto !w-[30px]"
                       dangerouslySetInnerHTML={{ __html: logo }}
                     />
                   </div>

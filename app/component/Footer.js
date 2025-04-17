@@ -115,19 +115,19 @@ const Footer = () => {
                         <div className='flex items-start flex-col gap-[13px] sm:gap-[14px] md:gap-[15px] lg:gap-[16px] xl:gap-[20px] 2xl:gap-[24px] justify-start'>
                           <a className='fotoerheadesecton text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px] figtree'>DigiByte links.</a>
                             <ul className='flex justify-start flex-col gap-[6] lg:gap-[8px] footeritesm figtree text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>
-                              <a className='figtree'>DigiByte Wiki</a>
-                              <a className='figtree'>DigiExplorer</a>
-                              <a className='figtree'>DigiStats</a>
-                              <a className='figtree'>DigiByte Mining</a>
+                              <a href='#' className='figtree cursor-pointer'>DigiByte Wiki</a>
+                              <a className='figtree cursor-pointer'>DigiExplorer</a>
+                              <a className='figtree cursor-pointer'>DigiStats</a>
+                              <a className='figtree cursor-pointer'>DigiByte Mining</a>
                             </ul>
                         </div>
                         <div className='flex items-start flex-col gap-[13px] sm:gap-[14px] md:gap-[15px] lg:gap-[16px] xl:gap-[20px] 2xl:gap-[24px] justify-start'>
                           <a className='fotoerheadesecton text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[22px] figtree'>Resources</a>
                             <ul className='flex justify-start flex-col gap-[6] lg:gap-[8px] footeritesm figtree text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>
-                              <a className='figtree'>DGB Integration Guide</a>
-                              <a className='figtree'>DGB Media Sheet</a>
-                              <a className='figtree'>DGB Logos & Icons</a>
-                              <a className='figtree'>DGB Protocol GitHub</a>
+                              <a className='figtree cursor-pointer'>DGB Integration Guide</a>
+                              <a className='figtree cursor-pointer'>DGB Media Sheet</a>
+                              <a className='figtree cursor-pointer'>DGB Logos & Icons</a>
+                              <a className='figtree cursor-pointer'>DGB Protocol GitHub</a>
                             </ul>
                         </div>
                         </div>
