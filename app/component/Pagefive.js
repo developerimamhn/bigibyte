@@ -98,7 +98,7 @@ const Pagefive = () => {
                   start: 'top 100%',
                   toggleActions: 'play none none none',
                 },
-                delay: index * 0.2, // Delay between each item
+                delay: index * 0.1, // Delay between each item
               }
             );
           });
